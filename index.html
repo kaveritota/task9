@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <center> <h1>GENERAL BUS PASS APPLICATION</h1></center>
+    <form   action="./response.html" method="get">
+        <fieldset > <legend ><b>Applicant Details</b></legend>
+     <label for="fname"> Name: </label> 
+        <input type="text" name="fname" id="fname" pattern="[A-Z]+" title="name should be in capital letters "  required > 
+
+       <label for=" lname">  Fathre's Name/Gaurdian's Name: </label> 
+       <input type="text" name="lname" id="lname" pattern="[A-Z]+" title="name should be in capital letters "  required> <br>
+
+       <label for="dob"> Date Of Birth:</label><br>
+       <input type="date" name="dob" id="dob"  placeholder="YYYY-MM-DD"   >
+       
+      <label for="gender" >Gender:</label>
+     <label for="male"> Male</label>
+       <input type="radio" name="gender" id="male">
+       <label for="female">Female</label>
+       <input type="radio" name="gender" id="female"><br><br>
+
+       <label for="aadhar">  Aadhar Number: </label> 
+       <input type="text" name="aadhar" id="aadhar" pattern="[0-9]{12}"  title="enter 12 digit number"required> <br><br>
+
+        
+
+       <label for="phone"  >Mobile Number: </label> 
+       <input type="text" name="phone" id="phone" pattern="[0-9]{10}" required> <br><br>
+        
+       <label for="photo" accept=".docx.pdf"> Photo: </label> 
+       <input type="file"  id="photo" required> <br>
+       </fieldset><br>
+
+       <fieldset>
+        <legend><b>Residential Address Details</b></legend>
+        <label for="address">Address:</label>
+         <textarea name="address" id="address"></textarea> 
+         <label for="district">District:</label>
+         <select name="district" id="district">
+            <option value="Hyderabad">Hyderabad</option>
+            <option value=" Karimnagar">Karimnagar</option>
+            <option value="Nirmal">Nirmal</option>
+            <option value="Nizamabad">Nizamabad</option>
+         </select><br>
+         <label for="district">District:</label>
+         <select name="district" id="district" required>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value=" Karimnagar">Karimnagar</option>
+            <option value="Nirmal">Nirmal</option>
+            <option value="Nizamabad">Nizamabad</option>
+         </select>
+         <label for="village">Village:</label>
+         <select name="district" id="district" required>
+            <option value="ameerpet"> Ameerpet</option>
+            <option value="kukatpally">Karimnagar</option>
+            <option value="koti"> kukatpally</option>
+            <option value="uppal"> uppal</option>
+         </select><br><br>
+         <label for="pincode">Pincode: </label> 
+       <input type="text"  id="pincode" pattern="[0-9]{6}" required> <br>
+       </fieldset>  <br>
+<fieldset>
+    <legend><b>Pass Type Details</b></legend>
+    <label for="city" multiple>City:</label>
+    <select name="district" id="district">
+       <option value="Hyderabad">Hyderabad</option>
+       <option value=" Karimnagar">Karimnagar</option>
+       <option value="Nirmal">Nirmal</option>
+       <option value="Nizamabad">Nizamabad</option>
+    </select>
+    <label for="passtype">Pass Type::</label>
+         <select name="passtype" id="passtype">
+            <option value="-select-"> -select- </option>
+            <option value="student pass">student opass </option>
+            <option value="general pass ">general pass</option>
+            <option value="ordinary pass "> ordinary pass</option>
+        </select><br>
+</fieldset><br>
+<fieldset>
+    <legend><b>Mode of Payment& Pass Collection</b></legend>
+    <label for="payment"> Payment Mode:</label>
+         <select name="payment " id="payment">
+            <option disable> -select mode of payment- </option>
+            <option value="online">PhonePe </option>
+            <option value="online">Gpay </option>
+            <option value="online">Paytm </option>
+    </select><br><br>
+    <label for="pass">Center ata Which You Collect Your Pass:</label>
+<input type="text" list="xyz" id="pass">
+     <datalist id="xyz">
+     <option value="secunderabad"> 
+      <option value="medcha"> 
+         <option value="ameerpet"> 
+            <option value="miryalguda"> 
+               <option value="uppal">
+
+     </datalist>
+</fieldset>
+</fieldset>
+       <br>
+   <center> <input type="submit" ></center>
+
+        
+    </form>
+</body>
+</html>
